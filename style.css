@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c');
+body{
+    margin: 0;
+}
+header{
+    background-color: rgb(49, 47, 192);
+}
+.header{
+    width:265px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+}
+.header img{
+    height: 50px;
+}
+.header div{
+   font-family: 'M PLUS Rounded 1c', sans-serif;
+   padding-left:15px;
+   font-size: 25px;
+   color:white;
+   letter-spacing: 0.5rem;
+}
+section{
+    display: flex;
+}
+.quiz_box{
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    font-size: 24px;
+    position: relative;
+}
+.question{
+    text-align: center;
+}
+.select{
+    position: absolute;
+    top:200px;
+    height: 250px;
+    margin-top: 100px;
+    margin: 0 auto;
+    width:800px;
+}
+.button_solid004 {
+    position:absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around; */
+}
+.button_solid004 a {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    max-width: 240px;
+    min-width: 200px;
+    padding: 10px 25px;
+    color: #FFF;
+    transition: 0.1s ease-in-out;
+    font-weight: 300;
+    background: #3479be;
+    border-radius: 8px;
+    border-bottom: solid 5px #43678a;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+.button_solid004 a:hover {
+    border-bottom: solid 2px #1d7fde;
+    transform: translateY(1px);
+}
+#correct_img{
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    top:-30%;                      
+    transform: translate(-50%, 0);
+    opacity: 0.8;                 
+    user-select: none;
+
+}
+#incorrect_img{
+    visibility: hidden;
+    position: absolute;
+    left: 50%;
+    top:-30%;                            
+    transform: translate(-50%, 0);
+    opacity: 0.8;  
+    user-select: none;
+}
+.balloon2-left {
+    position: relative;
+    display: inline-block;
+    margin: 1.5em 0 1.5em 15px;
+    padding: 7px 10px;
+    min-width: 120px;
+    max-width: 100%;
+    color: #555;
+    font-size: 20px;
+    background: #FFF;
+    border: solid 3px #555;
+    box-sizing: border-box;
+    height: 100px;
+    padding-top: 35px;
+    border-radius: 15px;
+  }
+  
+  .balloon2-left:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -24px;
+    margin-top: -12px;
+    border: 12px solid transparent;
+    border-right: 12px solid #FFF;
+    z-index: 2;
+  }
+  
+  .balloon2-left:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -30px;
+    margin-top: -14px;
+    border: 14px solid transparent;
+    border-right: 14px solid #555;
+    z-index: 1;
+  }
+  
+  .balloon2-left p {
+    margin: 0;
+    padding: 0;
+  }
+  .end{
+    display: flex;
+    position: absolute;
+    top:60%;
+    visibility: hidden;
+  }
+
+
+
+  /* 次へボタンについて */
+  .button018{
+    position: absolute;
+    top:105%;
+    right:8%;
+    visibility: hidden;
+  }
+
+  .button018 a {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 225px;
+    padding: 10px 0px 10px 25px;
+    color: #313131;
+    /* transition: 0.3s ease-in-out; */
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.button018 a:before, .button018 a:after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50%;
+}
+.button018 a:before {
+  width: 0.5rem;
+  height: 0.5rem;
+  left: 1.1rem;
+  border-top: solid 2px #fff;
+  border-right: solid 2px #fff;
+  z-index: 2;
+  transform: translateY(-50%) rotate(45deg);
+  transition: all 0.3s;
+}
+.button018 a:after {
+  left: 0;
+  background: #6bb6ff;
+  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 4rem;
+  transform: translateY(-50%);
+  transition: 0.1s;
+}
+.button018 a span {
+  position: relative;
+  /* transition: all 0.3s; */
+  z-index: 3;
+  padding-left: 28px;
+}
+
+.button018 a:hover span {
+  color: #fff;
+}
+.button018 a:hover:before {
+  left: 2rem;
+}
+.button018 a:hover:after {
+  right: 0;
+  width: 120%;
+}
+.answer{
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  top:90%;
+  right:45%;
+  /* transition: 0.3s ease-in-out; */
+}
