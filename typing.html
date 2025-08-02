@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>タイピングアプリ</title>
+  </head>
+  <body>
+    <audio id="utuoto" preload="auto">
+      <source src="audio/typing_music.mp3" type="audio/mp3"/>
+    </audio>
+    <audio id="matigai" preload="auto">
+      <source src="audio/matigai.mp3" type="audio/mp3"/>
+    </audio>
+    <audio id="syuuryou" preload="auto">
+      <source src="audio/syuuryou.mp3" type="audio/mp3"/>
+    </audio>
+    <!--<header>-->
+    <!--    <div class="header_title">-->
+    <!--      <span><img src="picture/typing.jpeg" alt=""></span>-->
+    <!--      <div>タイピングゲーム</div>-->
+    <!--    </div>-->
+    <!--    <ul class="header_li">-->
+    <!--      <li id="game_li"><a href="typing.html">ゲーム</a></li>-->
+    <!--      <li id="rank_li"><a href="ranking.php">ランキング</a></li>-->
+    <!--    </ul>        -->
+    <!--</header>-->
+    <!--<main class="main">-->
+    <div class="sub">
+      <p>入力時間：　<b><span id="mysec">60</span></b>　秒</p>
+      <!--<p>入力速度：　<b><span id="mozisuu">0</span></b>　文字/分</p>-->
+      <p>ミス：　<b><span id="miss">0</span></b>　回</p>
+    </div>
+    <div class="containar">
+        <div class="end_score">あなたのスコアは<p id="score"></p></div>
+        <div id="kanzi"></div>
+        <p id="text"></p>
+        <div id="qs_frame">
+            <div id="qs_bar"></div>
+            <div id="qs_mark"></div>
+        </div>
+    </div>
+    <div class="start">
+        <div class="title">タイピングゲーム</div>
+        <div class="sub_title">１位を目指そう！</div>
+        <div class="start_btn">
+        　<span><img src="picture/start.png" alt=""></span>
+        　<span>スタート</span>
+        </div>
+    </div>
+    <div class="mybox">
+      <input type="text" class="rank_text">
+      <span class="lavel rank_lavel">Name</span>
+        <div class="button">
+          <div class="submit"><h3>Submit</h3></div>
+          <div class="arrow">
+            <div class="top line"></div>
+            <div class="bottom line"></div>
+          </div>
+        </div>
+    </div>
+  <!--</main>-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <link href="https://fonts.googleapis.com/earlyaccess/kokoro.css" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/typing.css">
+    <script src="js/typing.js"></script>
+  </body>
+</html>
