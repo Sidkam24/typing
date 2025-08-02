@@ -19,7 +19,7 @@
 　ニックネームは禁止ワードを設定し、禁止ワードはニックネームにできないように設定しています。
 
 ## 【使用技術】
-・JavaScript
+・JavaScript  
 ・jQuery  
 ・HTML  
 ・CSS  
